@@ -9,3 +9,6 @@ dist
 .data
 *Zone.Identifier
 .eslintcache
+
+.pnpm-store
+**/node-compile-cache
