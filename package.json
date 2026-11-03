@@ -41,9 +41,6 @@
   "pnpm": {
     "overrides": {
       "vite": "npm:rolldown-vite@latest"
-    },
-    "patchedDependencies": {
-      "smooth-dnd@0.12.1": "patches/smooth-dnd@0.12.1.patch"
     }
   },
   "lint-staged": {
