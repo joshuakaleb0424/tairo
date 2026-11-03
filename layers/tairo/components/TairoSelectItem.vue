@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { BaseSelectItemProps } from '@shuriken-ui/nuxt/components/SelectItem.vue.d.ts'
+import type { BaseSelectItemProps } from '@joshuakaleb/shuriken-ui-nuxt/components/SelectItem.vue.d.ts'
 import type { AcceptableValue } from 'reka-ui'
 import { useForwardProps } from '#layers/@cssninja/tairo/utils/bundle/reka-ui'
 import { reactiveOmit } from '#layers/@cssninja/tairo/utils/bundle/vueuse'

@@ -29,7 +29,7 @@ const layerTree = [
           {
             item: {
               name: 'BaseInput.vue',
-              tooltip: 'Override @shuriken-ui/nuxt BaseInput',
+              tooltip: 'Override @joshuakaleb/shuriken-ui-nuxt BaseInput',
               icon: 'vscode-icons:file-type-vue',
             },
           },
@@ -350,7 +350,7 @@ const layerTree = [
       },
       {
         item: {
-          name: '@shuriken-ui/nuxt',
+          name: '@joshuakaleb/shuriken-ui-nuxt',
           color: 'bg-purple-500',
           tooltip: 'Open-source shuriken-ui layer',
         },
@@ -444,7 +444,7 @@ const mergedTree = [
           name: 'BaseButton.vue',
           icon: 'vscode-icons:file-type-vue',
           color: 'bg-purple-500',
-          tooltip: 'from @shuriken-ui/nuxt layer',
+          tooltip: 'from @joshuakaleb/shuriken-ui-nuxt layer',
         },
       },
       {
@@ -566,7 +566,7 @@ const mergedTree = [
       {
         item: {
           name: 'file-preview.ts',
-          tooltip: 'from @shuriken-ui/nuxt layer',
+          tooltip: 'from @joshuakaleb/shuriken-ui-nuxt layer',
           icon: 'vscode-icons:file-type-typescript',
           color: 'bg-purple-500',
         },
@@ -574,7 +574,7 @@ const mergedTree = [
       {
         item: {
           name: 'scrollspy.ts',
-          tooltip: 'from @shuriken-ui/nuxt layer',
+          tooltip: 'from @joshuakaleb/shuriken-ui-nuxt layer',
           icon: 'vscode-icons:file-type-typescript',
           color: 'bg-purple-500',
         },

@@ -54,7 +54,7 @@ const codePage = [
 
 const codeTailwind = [
   `@import 'tailwindcss';`,
-  `@import '@shuriken-ui/nuxt';`,
+  `@import '@joshuakaleb/shuriken-ui-nuxt';`,
   `@import '#layers/@cssninja/tairo/theme.css';`,
   ``,
   `@theme {`,

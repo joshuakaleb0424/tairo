@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { BaseCardProps } from '@shuriken-ui/nuxt/components/Card.vue.d.ts'
+import type { BaseCardProps } from '@joshuakaleb/shuriken-ui-nuxt/components/Card.vue.d.ts'
 import type { RadioGroupItemProps } from 'reka-ui'
 import { useForwardPropsEmits } from '#layers/@cssninja/tairo/utils/bundle/reka-ui'
 import { reactiveOmit } from '#layers/@cssninja/tairo/utils/bundle/vueuse'
