@@ -1,7 +1,7 @@
 FROM node:24.16.0-alpine3.22 AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable && corepack prepare pnpm@10.34.9 --activate
+RUN corepack enable && corepack prepare pnpm@12.16.1 --activate
 
 FROM base AS install
 COPY . /build
