@@ -1,7 +1,8 @@
 FROM node:26.13.0-alpine AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable && corepack prepare pnpm@12.16.1 --activate
+
+RUN npm install --global pnpm@12.16.1
 
 FROM base AS install
 COPY . /build
