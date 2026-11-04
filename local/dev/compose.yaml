@@ -1,7 +1,7 @@
-name: shuriken-ui-dev
+name: tairo-dev
 
 services:
-  shuriken-ui:
+  tairo:
     build:
       context: ../..
       dockerfile: local/dev/Dockerfile
@@ -23,27 +23,27 @@ services:
     #   retries: 5
     #   start_period: 30s
     labels:
-      caddy: "${SHURIKENUI_FRONTEND_HOST:-shuriken-ui.localhost}"
+      caddy: "${TAIRO_FRONTEND_HOST:-tairo.localhost}"
       caddy.reverse_proxy: "{{upstreams 3000}}"
       caddy_ingress_network: "${PROXY_NETWORK:-local-proxy}"
       traefik.enable: "true"
       traefik.docker.network: "${PROXY_NETWORK:-local-proxy}"
-      traefik.http.routers.shuriken-ui.entrypoints: "${TRAEFIK_ENTRYPOINTS:-web}"
-      traefik.http.routers.shuriken-ui.rule: "Host(`${SHURIKENUI_FRONTEND_HOST:-shuriken-ui.localhost}`)"
-      traefik.http.routers.shuriken-ui.tls: "${TRAEFIK_TLS:-false}"
-      traefik.http.services.shuriken-ui.loadbalancer.server.port: "3000"
+      traefik.http.routers.tairo.entrypoints: "${TRAEFIK_ENTRYPOINTS:-web}"
+      traefik.http.routers.tairo.rule: "Host(`${TAIRO_FRONTEND_HOST:-tairo.localhost}`)"
+      traefik.http.routers.tairo.tls: "${TRAEFIK_TLS:-false}"
+      traefik.http.services.tairo.loadbalancer.server.port: "3000"
     networks:
       default: null
       proxy:
         aliases:
-          - shuriken-ui
+          - tairo
     restart: unless-stopped
     volumes:
       - ../..:/app
 
 networks:
   default:
-    name: shuriken-ui-dev
+    name: tairo-dev
   proxy:
     external: true
     name: "${PROXY_NETWORK:-local-proxy}"

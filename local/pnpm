@@ -7,7 +7,7 @@ compose_file="${script_dir}/dev/compose.yaml"
 env_file="${script_dir}/dev/.env"
 
 if [ -f "${env_file}" ]; then
-    exec docker compose --env-file "${env_file}" -f "${compose_file}" run --rm --no-deps shuriken-ui pnpm "$@"
+    exec docker compose --env-file "${env_file}" -f "${compose_file}" run --rm --no-deps tairo pnpm "$@"
 fi
 
-exec docker compose -f "${compose_file}" run --rm --no-deps shuriken-ui pnpm "$@"
+exec docker compose -f "${compose_file}" run --rm --no-deps tairo pnpm "$@"
