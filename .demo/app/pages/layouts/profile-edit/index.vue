@@ -137,7 +137,12 @@ const initialValues: FormInput = {
 }
 
 // This is the list of options for the select inputs
-const experience = ['0-2 years', '2-5 years', '5-10 years', '10+ years']
+const experience = [
+  '0-2 years',
+  '2-5 years',
+  '5-10 years',
+  '10+ years',
+]
 const answers = [
   {
     label: 'Yes',

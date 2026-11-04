@@ -72,7 +72,12 @@ async function getDemoData() {
           ],
         },
       },
-      targets: ['Acquisitions', 'R&D', 'Marketing', 'Payroll'],
+      targets: [
+        'Acquisitions',
+        'R&D',
+        'Marketing',
+        'Payroll',
+      ],
       provider: {
         name: 'Tairo Inc.',
         logo: '/img/logos/logo.svg',

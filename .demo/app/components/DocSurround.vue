@@ -4,7 +4,9 @@ const route = useRoute()
 const { data: page } = await useAsyncData(`page-surround:${route.path}`, () => {
   return queryCollectionItemSurroundings('docs', route.path)
 }, {
-  watch: [() => route.path],
+  watch: [
+    () => route.path,
+  ],
 })
 </script>
 

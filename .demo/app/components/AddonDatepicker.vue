@@ -19,7 +19,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmits(['update:model-value', 'close'])
+const emit = defineEmits(['update:modelValue', 'close'])
 
 const DatePicker = defineAsyncComponent({
   loader: () => import('v-calendar').then(m => m.DatePicker),
@@ -29,7 +29,7 @@ const DatePicker = defineAsyncComponent({
 const date = computed({
   get: () => props.modelValue,
   set: (value) => {
-    emit('update:model-value', value)
+    emit('update:modelValue', value)
     emit('close')
   },
 })

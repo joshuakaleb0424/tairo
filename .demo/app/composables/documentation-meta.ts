@@ -1,5 +1,5 @@
-import type { NuxtComponentMeta, NuxtComponentMetaNames } from '#nuxt-component-meta/types'
 import type { MaybeRefOrGetter } from 'vue'
+import type { NuxtComponentMeta, NuxtComponentMetaNames } from '#nuxt-component-meta/types'
 
 const excludedProps = ['modelValue', 'modelModifiers']
 
@@ -34,7 +34,11 @@ export async function useDocumentationMeta<T extends NuxtComponentMetaNames>(
         return a.name.localeCompare(b.name)
       })
       props.sort((a: any, b: any) => {
-        return a.required === b.required ? 0 : a.required ? -1 : 1
+        return a.required === b.required
+          ? 0
+          : a.required
+            ? -1
+            : 1
       })
 
       return props

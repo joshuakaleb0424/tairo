@@ -9,7 +9,10 @@ const {
 } = usePanels()
 
 watch(
-  [() => current.value?.component, () => current.value?.overlay],
+  [
+    () => current.value?.component,
+    () => current.value?.overlay,
+  ],
   ([component, overlay]) => {
     if (component && overlay) {
       document.documentElement.style.overflow = 'hidden'

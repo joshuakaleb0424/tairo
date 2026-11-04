@@ -200,18 +200,34 @@ function loadPlacesLayers() {
           11,
           [
             'case',
-            ['==', ['feature-state', 'selected'], true],
+            [
+              '==',
+              ['feature-state', 'selected'],
+              true,
+            ],
             5,
-            ['==', ['feature-state', 'highlight'], true],
+            [
+              '==',
+              ['feature-state', 'highlight'],
+              true,
+            ],
             7,
             6,
           ],
           16,
           [
             'case',
-            ['==', ['feature-state', 'selected'], true],
+            [
+              '==',
+              ['feature-state', 'selected'],
+              true,
+            ],
             8,
-            ['==', ['feature-state', 'highlight'], true],
+            [
+              '==',
+              ['feature-state', 'highlight'],
+              true,
+            ],
             10,
             9,
           ],
@@ -238,18 +254,34 @@ function loadPlacesLayers() {
           11,
           [
             'case',
-            ['==', ['feature-state', 'selected'], true],
+            [
+              '==',
+              ['feature-state', 'selected'],
+              true,
+            ],
             5,
-            ['==', ['feature-state', 'highlight'], true],
+            [
+              '==',
+              ['feature-state', 'highlight'],
+              true,
+            ],
             3,
             4,
           ],
           16,
           [
             'case',
-            ['==', ['feature-state', 'selected'], true],
+            [
+              '==',
+              ['feature-state', 'selected'],
+              true,
+            ],
             7,
-            ['==', ['feature-state', 'highlight'], true],
+            [
+              '==',
+              ['feature-state', 'highlight'],
+              true,
+            ],
             5,
             6,
           ],
@@ -351,7 +383,9 @@ function loadTerrain() {
         'minzoom': 0,
         'maxzoom': 24,
         'paint': {
-          'fill-extrusion-color': colorMode.value === 'dark' ? '#666' : '#ccc',
+          'fill-extrusion-color': colorMode.value === 'dark'
+            ? '#666'
+            : '#ccc',
           'fill-extrusion-cast-shadows': true,
           'fill-extrusion-flood-light-intensity': 0.5,
 

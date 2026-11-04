@@ -10,7 +10,9 @@ const email = ref('contact@acme.com')
 const password = ref('contact@acme.com')
 const useUserInputs = ref(true)
 
-const userInputs = computed(() => useUserInputs.value ? [username.value, email.value] : [])
+const userInputs = computed(() => useUserInputs.value
+  ? [username.value, email.value]
+  : [])
 </script>
 
 <template>

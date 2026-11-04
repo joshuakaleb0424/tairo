@@ -19,7 +19,9 @@ const { pending, data } = useAsyncData(
       .first()
   },
   {
-    watch: [() => props.to],
+    watch: [
+      () => props.to,
+    ],
   },
 )
 

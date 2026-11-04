@@ -12,8 +12,20 @@ function useDemoDonut() {
       title: {
         text: '',
       },
-      labels: ['Bills', 'Health', 'Education', 'Food', 'Other'],
-      colors: ['var(--color-chart-base)', 'var(--color-violet-600)', 'var(--color-violet-700)', 'var(--color-violet-800)', 'var(--color-violet-900)'],
+      labels: [
+        'Bills',
+        'Health',
+        'Education',
+        'Food',
+        'Other',
+      ],
+      colors: [
+        'var(--color-chart-base)',
+        'var(--color-violet-600)',
+        'var(--color-violet-700)',
+        'var(--color-violet-800)',
+        'var(--color-violet-900)',
+      ],
       responsive: [
         {
           breakpoint: 480,

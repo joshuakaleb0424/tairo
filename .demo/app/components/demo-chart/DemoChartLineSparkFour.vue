@@ -5,7 +5,18 @@ function useLineSparkFour() {
   const series = shallowRef([
     {
       name: 'Abandonned',
-      data: [1412, 725, 427, 655, 145, 325, 197, 584, 424, 651],
+      data: [
+        1412,
+        725,
+        427,
+        655,
+        145,
+        325,
+        197,
+        584,
+        424,
+        651,
+      ],
     },
   ])
 

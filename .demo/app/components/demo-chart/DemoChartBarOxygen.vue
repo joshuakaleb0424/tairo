@@ -39,7 +39,15 @@ function useBarOxygen() {
         show: false,
       },
       xaxis: {
-        categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        categories: [
+          'Mon',
+          'Tue',
+          'Wed',
+          'Thu',
+          'Fri',
+          'Sat',
+          'Sun',
+        ],
         position: 'top',
         axisBorder: {
           show: false,

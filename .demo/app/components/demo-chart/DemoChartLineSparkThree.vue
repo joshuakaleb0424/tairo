@@ -5,7 +5,18 @@ function useLineSparkThree() {
   const series = shallowRef([
     {
       name: 'New Orders',
-      data: [4457, 4533, 7274, 3272, 5876, 3271, 4614, 3553, 4835, 1579],
+      data: [
+        4457,
+        4533,
+        7274,
+        3272,
+        5876,
+        3271,
+        4614,
+        3553,
+        4835,
+        1579,
+      ],
     },
   ])
 

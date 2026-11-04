@@ -158,7 +158,9 @@ function handleInput(value: string, touched = true) {
   }
   catch (error) {
     validation.valid = false
-    validation.error = (error instanceof Error) ? error.message : ''
+    validation.error = (error instanceof Error)
+      ? error.message
+      : ''
     emits('validation', validation)
   }
   finally {

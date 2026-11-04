@@ -12,8 +12,20 @@ function useDemoDonut() {
       title: {
         text: '',
       },
-      labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
-      colors: ['var(--color-chart-base)', 'var(--color-primary-300)', 'var(--color-amber-400)', 'var(--color-indigo-400)', 'var(--color-teal-400)'],
+      labels: [
+        'Team A',
+        'Team B',
+        'Team C',
+        'Team D',
+        'Team E',
+      ],
+      colors: [
+        'var(--color-chart-base)',
+        'var(--color-primary-300)',
+        'var(--color-amber-400)',
+        'var(--color-indigo-400)',
+        'var(--color-teal-400)',
+      ],
       responsive: [
         {
           breakpoint: 480,

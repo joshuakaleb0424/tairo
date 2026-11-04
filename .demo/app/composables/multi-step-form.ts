@@ -163,7 +163,7 @@ export function provideMultiStepForm<
     if (step?.validate) {
       try {
         const success = await step.validate(context)
-        const hasErrors = Object.values(errors.value.fields).filter(Boolean).length > 0 || errors.value.message
+        const hasErrors = Object.values(errors.value.fields).some(Boolean) || errors.value.message
 
         if (success === false || hasErrors) {
           return false

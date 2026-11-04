@@ -1,9 +1,9 @@
 <script lang="ts">
 import type { BaseSelectItemProps } from '@joshuakaleb/shuriken-ui-nuxt/components/SelectItem.vue.d.ts'
 import type { AcceptableValue } from 'reka-ui'
+import { SelectItemText } from 'reka-ui'
 import { useForwardProps } from '#layers/@cssninja/tairo/utils/bundle/reka-ui'
 import { reactiveOmit } from '#layers/@cssninja/tairo/utils/bundle/vueuse'
-import { SelectItemText } from 'reka-ui'
 
 export interface TairoSelectItemProps<T = AcceptableValue> extends Omit<BaseSelectItemProps<T>, 'rawSlot'> {
   media?: string

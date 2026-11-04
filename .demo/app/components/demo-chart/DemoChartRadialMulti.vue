@@ -17,7 +17,12 @@ function useDemoRadialMulti() {
           show: false,
         },
       },
-      colors: ['var(--color-chart-base)', 'var(--color-primary-300)', 'var(--color-amber-400)', 'var(--color-indigo-400)'],
+      colors: [
+        'var(--color-chart-base)',
+        'var(--color-primary-300)',
+        'var(--color-amber-400)',
+        'var(--color-indigo-400)',
+      ],
       plotOptions: {
         radialBar: {
           dataLabels: {
@@ -39,7 +44,12 @@ function useDemoRadialMulti() {
           },
         },
       },
-      labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
+      labels: [
+        'Apples',
+        'Oranges',
+        'Bananas',
+        'Berries',
+      ],
     },
   })
 }

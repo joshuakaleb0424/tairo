@@ -121,7 +121,10 @@ async function checkPassword(value: string) {
 }
 
 watchDebounced(
-  [vmodel, () => props.userInputs],
+  [
+    vmodel,
+    () => props.userInputs,
+  ],
   ([value]) => checkPassword(value),
   { debounce: 200, immediate: true },
 )
@@ -134,7 +137,9 @@ onNuxtReady(async () => {
   ] = await Promise.all([
     import('@zxcvbn-ts/core'),
     import('@zxcvbn-ts/language-common'),
-    props.locale ? props.locale() : import('@zxcvbn-ts/language-en'),
+    props.locale
+      ? props.locale()
+      : import('@zxcvbn-ts/language-en'),
   ])
 
   options = {

@@ -136,7 +136,9 @@ async function initMapbox() {
         // @ts-ignore
         mapboxgl,
         marker: false,
-        ...(typeof props.geocoder === 'object' && props.geocoder ? props.geocoder : {}),
+        ...(typeof props.geocoder === 'object' && props.geocoder
+          ? props.geocoder
+          : {}),
       })
 
       map.value.addControl(geocoder.value as any, 'top-left')
@@ -210,7 +212,9 @@ function updatePositionMarker() {
     // Can't be a CSS variable because it doesn't work with the mapbox-gl-geocoder
     color: '#5d0ec0',
     draggable: true,
-    ...(typeof props.marker === 'object' && props.marker ? props.marker : {}),
+    ...(typeof props.marker === 'object' && props.marker
+      ? props.marker
+      : {}),
   })
     .setLngLat(modelValue.value)
     .on('dragend', (event) => {

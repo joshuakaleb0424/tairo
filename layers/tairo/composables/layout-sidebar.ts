@@ -16,7 +16,9 @@ export function createLayoutSidebarContext({
   modelValue?: Ref<string | undefined>
 } = {}): LayoutSidebarContext {
   const isMobileOpen = ref(false)
-  const currentSubsidebarId = modelValue !== undefined ? modelValue : ref(defaultSubsidebarId)
+  const currentSubsidebarId = modelValue !== undefined
+    ? modelValue
+    : ref(defaultSubsidebarId)
   const context = {
     isMobileOpen,
     currentSubsidebarId,

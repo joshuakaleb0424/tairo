@@ -3,7 +3,9 @@ const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('docs').path(route.path).first()
 }, {
-  watch: [() => route.path],
+  watch: [
+    () => route.path,
+  ],
 })
 
 const links = computed(() => page.value?.body?.toc?.links || [])

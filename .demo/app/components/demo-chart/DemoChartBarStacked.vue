@@ -41,7 +41,12 @@ function useDemoBarStacked() {
           fontWeight: 300,
         },
       },
-      colors: ['var(--color-chart-base)', 'var(--color-primary-300)', 'var(--color-amber-400)', 'var(--color-indigo-400)'],
+      colors: [
+        'var(--color-chart-base)',
+        'var(--color-primary-300)',
+        'var(--color-amber-400)',
+        'var(--color-indigo-400)',
+      ],
       responsive: [
         {
           breakpoint: 480,

@@ -19,12 +19,24 @@ function useDemoRadar() {
           show: false,
         },
       },
-      colors: ['var(--color-chart-base)', 'var(--color-success-500)', 'var(--color-info-500)', 'var(--color-destructive-500)'],
+      colors: [
+        'var(--color-chart-base)',
+        'var(--color-success-500)',
+        'var(--color-info-500)',
+        'var(--color-destructive-500)',
+      ],
       title: {
         text: '',
       },
       xaxis: {
-        categories: ['January', 'February', 'March', 'April', 'May', 'June'],
+        categories: [
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+        ],
       },
     },
   })

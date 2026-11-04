@@ -65,7 +65,9 @@ export default defineNuxtModule({
 
       // Ensure the regex is reset before using it
       docExampleRe.lastIndex = 0
-      const matches = [...file.body.matchAll(docExampleRe)]
+      const matches = [
+        ...file.body.matchAll(docExampleRe),
+      ]
 
       for (const [search, folder, name] of matches) {
         const path = join(examplesFolder, `/${folder}/${name}.vue`)

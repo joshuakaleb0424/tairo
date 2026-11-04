@@ -15,7 +15,7 @@
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/simple-icons": "^1.2.101",
     "@joshuakaleb/shuriken-ui-nuxt": "4.0.0",
-    "@nuxt/fonts": "^0.14.0",
+    "@nuxt/fonts": "^1.2.0",
     "nuxt": "4.6.4",
     "tailwindcss": "^4.3.4",
     "typescript": "5.9.3",

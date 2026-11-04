@@ -56,7 +56,12 @@ const validationSchema = z
         day: z.string().nullable(),
       }),
       status: z
-        .literal(['single', 'married', 'divorced', 'widower'])
+        .literal([
+          'single',
+          'married',
+          'divorced',
+          'widower',
+        ])
         .nullable(),
       gender: z
         .literal(['male', 'female', 'other'])

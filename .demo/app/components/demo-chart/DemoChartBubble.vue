@@ -63,7 +63,12 @@ function useDemoBubble() {
           show: false,
         },
       },
-      colors: ['var(--color-chart-base)', 'var(--color-amber-400)', 'var(--color-indigo-400)', 'var(--color-primary-300)'],
+      colors: [
+        'var(--color-chart-base)',
+        'var(--color-amber-400)',
+        'var(--color-indigo-400)',
+        'var(--color-primary-300)',
+      ],
       dataLabels: {
         enabled: false,
       },

@@ -11,7 +11,9 @@ const { data } = await useAsyncData(
   `page-data:${route.path}`,
   () => queryCollection('docs').path(route.path).first(),
   {
-    watch: [() => route.path],
+    watch: [
+      () => route.path,
+    ],
   },
 )
 

@@ -121,21 +121,45 @@ const results = [
 
 // Daterange picker
 const ranges = [
-  { label: 'Last 7 days', duration: { days: 7 } },
-  { label: 'Last 14 days', duration: { days: 14 } },
-  { label: 'Last 30 days', duration: { days: 30 } },
-  { label: 'Last 3 months', duration: { months: 3 } },
-  { label: 'Last 6 months', duration: { months: 6 } },
-  { label: 'Last year', duration: { years: 1 } },
+  {
+    label: 'Last 7 days',
+    duration: { days: 7 },
+  },
+  {
+    label: 'Last 14 days',
+    duration: { days: 14 },
+  },
+  {
+    label: 'Last 30 days',
+    duration: { days: 30 },
+  },
+  {
+    label: 'Last 3 months',
+    duration: { months: 3 },
+  },
+  {
+    label: 'Last 6 months',
+    duration: { months: 6 },
+  },
+  {
+    label: 'Last year',
+    duration: { years: 1 },
+  },
 ]
-const selected = ref({ start: sub(new Date(), { days: 14 }), end: new Date() })
+const selected = ref({
+  start: sub(new Date(), { days: 14 }),
+  end: new Date(),
+})
 
 function isRangeSelected(duration: Duration) {
   return isSameDay(selected.value.start, sub(new Date(), duration)) && isSameDay(selected.value.end, new Date())
 }
 
 function selectRange(duration: Duration) {
-  selected.value = { start: sub(new Date(), duration), end: new Date() }
+  selected.value = {
+    start: sub(new Date(), duration),
+    end: new Date(),
+  }
 }
 </script>
 

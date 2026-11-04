@@ -50,7 +50,15 @@ function useDemoBarHorizontalMulti() {
         colors: ['#fff'],
       },
       xaxis: {
-        categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+        categories: [
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+        ],
       },
       legend: {
         position: 'top',

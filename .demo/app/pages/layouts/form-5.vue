@@ -54,7 +54,13 @@ const hasChars = computed(() => {
   )
 })
 
-watch([charsLength, charsLower, charsUpper, charsNumeric, charsSymbols], () => {
+watch([
+  charsLength,
+  charsLower,
+  charsUpper,
+  charsNumeric,
+  charsSymbols,
+], () => {
   if (!hasChars.value)
     return
 

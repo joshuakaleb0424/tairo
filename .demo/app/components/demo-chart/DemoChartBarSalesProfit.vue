@@ -5,7 +5,17 @@ function useBarSalesProfit() {
   const series = shallowRef([
     {
       name: 'Net Profit',
-      data: [-26, -15, -13, -14, -9, -12, -7, -10, -4],
+      data: [
+        -26,
+        -15,
+        -13,
+        -14,
+        -9,
+        -12,
+        -7,
+        -10,
+        -4,
+      ],
     },
     {
       name: 'Revenue',
@@ -13,7 +23,17 @@ function useBarSalesProfit() {
     },
     {
       name: 'Free Cash Flow',
-      data: [-35, -29, -34, -44, -25, -22, -18, -17, -29],
+      data: [
+        -35,
+        -29,
+        -34,
+        -44,
+        -25,
+        -22,
+        -18,
+        -17,
+        -29,
+      ],
     },
   ])
 

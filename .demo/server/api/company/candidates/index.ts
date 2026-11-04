@@ -43,7 +43,12 @@ export default defineEventHandler(async (event) => {
       ? data.slice(offset, offset + perPage)
       : data
           .filter((item) => {
-            return [item.username, item.location, item.position, item.industry].some(
+            return [
+              item.username,
+              item.location,
+              item.position,
+              item.industry,
+            ].some(
               item => item.match(filterRe),
             )
           })

@@ -131,7 +131,10 @@ export function useCalendarEvents(props: UseCalendarEventsProps) {
   }
 
   // refresh on fromDate and toDate change and on mounted
-  watch([() => toValue(props.fromDate), () => toValue(props.toDate)], refresh, {
+  watch([
+    () => toValue(props.fromDate),
+    () => toValue(props.toDate),
+  ], refresh, {
     immediate: true,
   })
 

@@ -2,9 +2,9 @@
   "name": "tairo",
   "type": "module",
   "version": "2.1.0",
-  "license": "MIT",
   "private": true,
   "packageManager": "pnpm@10.34.9",
+  "license": "MIT",
   "main": "./nuxt.config.ts",
   "engines": {
     "node": ">=22",
@@ -28,20 +28,16 @@
     "lint": "eslint --cache --fix ."
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.4.1",
-    "eslint": "9.39.5",
-    "eslint-plugin-format": "^1.5.0",
-    "lint-staged": "16.4.0",
+    "@antfu/eslint-config": "^10.0.0",
+    "eslint": "10.14.0",
+    "eslint-plugin-format": "^2.0.1",
+    "lint-staged": "17.6.0",
     "npm-run-all": "4.1.5",
-    "rimraf": "6.1.4"
+    "rimraf": "6.1.4",
+    "rolldown": "~1.2.16"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
-  },
-  "pnpm": {
-    "overrides": {
-      "vite": "npm:rolldown-vite@latest"
-    }
   },
   "lint-staged": {
     "*.(ts|vue)": [

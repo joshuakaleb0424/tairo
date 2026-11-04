@@ -64,7 +64,13 @@ const validationSchema = z
         .literal(['intern', 'resident', 'titular'])
         .nullable(),
       speciality: z
-        .literal(['Surgery', 'Cardiology', 'Pediatry', 'Dermataulogy', 'Traumatology'])
+        .literal([
+          'Surgery',
+          'Cardiology',
+          'Pediatry',
+          'Dermataulogy',
+          'Traumatology',
+        ])
         .nullable(),
       experience: z
         .literal(['0-5', '5-10', '10-15', '15+'])

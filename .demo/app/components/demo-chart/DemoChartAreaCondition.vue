@@ -45,7 +45,15 @@ function useAreaCondition() {
         },
       },
       colors: ['var(--color-chart-base)'],
-      labels: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      labels: [
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Oct',
+        'Nov',
+        'Dec',
+      ],
       yaxis: {
         opposite: true,
       },

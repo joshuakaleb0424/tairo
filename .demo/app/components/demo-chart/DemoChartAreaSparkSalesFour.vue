@@ -87,7 +87,9 @@ function useAreaSparkSalesFour() {
           opacityTo: 0.1,
         },
       },
-      labels: [...Array.from({ length: 24 }).keys()].map(n => `2020-10-0${n + 1}`),
+      labels: [
+        ...Array.from({ length: 24 }).keys(),
+      ].map(n => `2020-10-0${n + 1}`),
       yaxis: {
         min: 0,
         labels: {

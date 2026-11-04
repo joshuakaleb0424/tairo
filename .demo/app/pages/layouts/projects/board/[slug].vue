@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { DemoPanelTask } from '#components'
 import { Container, Draggable } from 'vue3-smooth-dnd'
+import { DemoPanelTask } from '#components'
 
 definePageMeta({
   title: 'Project Board',

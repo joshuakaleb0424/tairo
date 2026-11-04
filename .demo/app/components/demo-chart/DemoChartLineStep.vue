@@ -5,7 +5,20 @@ function useDemoLineStep() {
   const series = shallowRef([
     {
       name: 'New members',
-      data: [34, 44, 54, 21, 12, 43, 33, 23, 66, 66, 58, 79],
+      data: [
+        34,
+        44,
+        54,
+        21,
+        12,
+        43,
+        33,
+        23,
+        66,
+        66,
+        58,
+        79,
+      ],
     },
   ])
 

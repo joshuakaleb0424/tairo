@@ -33,7 +33,15 @@ const MONTH_SHORT_NAMES = [
   'Dec',
 ]
 
-const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+const DAYS = [
+  'Sun',
+  'Mon',
+  'Tue',
+  'Wed',
+  'Thu',
+  'Fri',
+  'Sat',
+]
 
 const showDatepicker = ref(false)
 const datepickerValue = ref('')

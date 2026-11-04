@@ -86,7 +86,9 @@ function useDemoTimeline() {
           const a = Number(val[0])
           const b = Number(val[1])
           const diff = b - a
-          return `${label}: ${diff}${diff > 1 ? 'D' : 'd'}`
+          return `${label}: ${diff}${diff > 1
+            ? 'D'
+            : 'd'}`
         },
         style: {
           colors: ['#f3f4f5', '#fff'],

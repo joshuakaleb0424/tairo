@@ -44,7 +44,10 @@ async function getDemoData() {
         replies: 97,
         posts: 16,
       },
-      teams: [{ src: '/img/avatars/9.svg' }, { src: '/img/avatars/11.svg' }],
+      teams: [
+        { src: '/img/avatars/9.svg' },
+        { src: '/img/avatars/11.svg' },
+      ],
     },
     {
       id: '34',
@@ -82,7 +85,10 @@ async function getDemoData() {
         replies: 97,
         posts: 16,
       },
-      teams: [{ src: '/img/avatars/7.svg' }, { src: '/img/avatars/23.svg' }],
+      teams: [
+        { src: '/img/avatars/7.svg' },
+        { src: '/img/avatars/23.svg' },
+      ],
     },
     {
       id: '40',
@@ -125,7 +131,9 @@ async function getDemoData() {
         replies: 158,
         posts: 54,
       },
-      teams: [{ src: '/img/avatars/18.svg' }],
+      teams: [
+        { src: '/img/avatars/18.svg' },
+      ],
     },
     {
       id: '9',
@@ -142,7 +150,10 @@ async function getDemoData() {
         replies: 28,
         posts: 12,
       },
-      teams: [{ src: '/img/avatars/12.svg' }, { src: '/img/avatars/5.svg' }],
+      teams: [
+        { src: '/img/avatars/12.svg' },
+        { src: '/img/avatars/5.svg' },
+      ],
     },
     {
       id: '18',
@@ -187,7 +198,10 @@ async function getDemoData() {
         replies: 15,
         posts: 2,
       },
-      teams: [{ src: '/img/avatars/15.svg' }, { src: '/img/avatars/22.svg' }],
+      teams: [
+        { src: '/img/avatars/15.svg' },
+        { src: '/img/avatars/22.svg' },
+      ],
     },
     {
       id: '25',
@@ -227,7 +241,10 @@ async function getDemoData() {
         replies: 82,
         posts: 14,
       },
-      teams: [{ src: '/img/avatars/9.svg' }, { src: '/img/avatars/14.svg' }],
+      teams: [
+        { src: '/img/avatars/9.svg' },
+        { src: '/img/avatars/14.svg' },
+      ],
     },
   ])
 }

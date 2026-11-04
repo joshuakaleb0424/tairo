@@ -27,7 +27,9 @@ export default defineEventHandler(async (event) => {
           })
           .slice(offset, offset + perPage),
     recent: data.filter(item => item.recent === true),
-    project: slug ? data.find(item => item.slug === slug) : undefined,
+    project: slug
+      ? data.find(item => item.slug === slug)
+      : undefined,
   }
 })
 
