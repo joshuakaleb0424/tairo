@@ -13,7 +13,8 @@
   "workspaces": [
     ".demo",
     ".app",
-    "layers/*"
+    "layers/*",
+    "tairo-component-meta"
   ],
   "scripts": {
     "dev": "pnpm --filter=app dev",

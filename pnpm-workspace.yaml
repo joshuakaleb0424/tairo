@@ -1,5 +1,7 @@
+minimumReleaseAge: 0
 minimumReleaseAgeExcludePrune: true
 trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 1440
 shellEmulator: true
 
 packages:
@@ -8,11 +10,11 @@ packages:
   - layers/*
   - tairo-component-meta
 
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - '@tailwindcss/oxide'
-  - better-sqlite3
-  - core-js-pure
-  - esbuild
-  - sharp
-  - vue-demi
+allowBuilds:
+  '@parcel/watcher': true
+  '@tailwindcss/oxide': true
+  better-sqlite3: true
+  core-js-pure: true
+  esbuild: true
+  sharp: true
+  vue-demi: true
