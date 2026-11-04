@@ -11,10 +11,10 @@ packages:
   - tairo-component-meta
 
 allowBuilds:
-  '@parcel/watcher': true
-  '@tailwindcss/oxide': true
-  better-sqlite3: true
-  core-js-pure: true
-  esbuild: true
-  sharp: true
-  vue-demi: true
+  '@parcel/watcher': false
+  '@tailwindcss/oxide': false
+  better-sqlite3: false
+  core-js-pure: false
+  esbuild: false
+  sharp: false
+  vue-demi: false
